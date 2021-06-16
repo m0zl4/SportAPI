@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6B9D7EA262AAF330093A009 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D6B9D7E9262AAF330093A009 /* SDWebImageSwiftUI */; };
+		D6B9D7EE262AB09B0093A009 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D6B9D7ED262AB09B0093A009 /* SwiftyJSON */; };
 		D6FBBAEA2629D7970026B83A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBBAE92629D7970026B83A /* AppDelegate.swift */; };
 		D6FBBAEC2629D7970026B83A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBBAEB2629D7970026B83A /* SceneDelegate.swift */; };
 		D6FBBAEE2629D7970026B83A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBBAED2629D7970026B83A /* ContentView.swift */; };
@@ -33,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B9D7EE262AB09B0093A009 /* SwiftyJSON in Frameworks */,
+				D6B9D7EA262AAF330093A009 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,10 @@
 			dependencies = (
 			);
 			name = SportAPI;
+			packageProductDependencies = (
+				D6B9D7E9262AAF330093A009 /* SDWebImageSwiftUI */,
+				D6B9D7ED262AB09B0093A009 /* SwiftyJSON */,
+			);
 			productName = SportAPI;
 			productReference = D6FBBAE62629D7970026B83A /* SportAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +129,10 @@
 				Base,
 			);
 			mainGroup = D6FBBADD2629D7970026B83A;
+			packageReferences = (
+				D6B9D7E8262AAF330093A009 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				D6B9D7EC262AB09B0093A009 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = D6FBBAE72629D7970026B83A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +361,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6B9D7E8262AAF330093A009 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		D6B9D7EC262AB09B0093A009 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6B9D7E9262AAF330093A009 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6B9D7E8262AAF330093A009 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		D6B9D7ED262AB09B0093A009 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6B9D7EC262AB09B0093A009 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D6FBBAEF2629D7970026B83A /* SportAPI.xcdatamodeld */ = {
